@@ -25,7 +25,7 @@ Route::get('users',function()
 });
 Route::get('martin', function()
 {
-    return 'Martin Rowe!';
+    return 'Martin Rowe! Again';
 });
 Route::get('users', function()
 {
