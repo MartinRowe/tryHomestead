@@ -25,7 +25,7 @@ Route::get('users',function()
 });
 Route::get('martin', function()
 {
-    return 'Martin Rowe! Again';
+    return 'Martin Rowe! Again and again for github';
 });
 Route::get('users', function()
 {
