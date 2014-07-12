@@ -19,17 +19,20 @@ Route::get('trysass', function()
 {
 	return View::make('trysass');
 });
-Route::get('users',function()
-{
- return View::make('users');
-});
 Route::get('martin', function()
 {
     return 'Martin Rowe! Again and again for github';
 });
 Route::get('users', function()
 {
-	$users = DB::table('Users')->get();
-	return $users;
-//	return View::make('users.index', ['users' => $users]);
+	/*$users = DB::table('users')->get(); */
+	$users = User::all();
+	return $users; 
+});
+Route::get('town', function()
+{
+	/*$users = DB::connection('foo')->select(...); */
+	/*$results = DB::connection('usersConn')->select('select * from users'); */
+	$users = DB::table('town')->get();
+	return $users; 
 });
