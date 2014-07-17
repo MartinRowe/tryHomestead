@@ -3,13 +3,12 @@ ip: "192.168.10.10"
 memory: 2048
 cpus: 1
 
-authorize: theKey.pub
-#/Users/me/.ssh/id_rsa.pub
+authorize: /Users/martinrowe/.ssh/id_rsa.pub
+#theKey.pub
 
 keys:
-    - theKey 
-    #/Users/me/.ssh/id_rsa
-
+    - /Users/martinrowe/.ssh/id_rsa
+#theKey 
 folders:
     - map: /Users/martinrowe/Documents/Sites/Homestead
       to: /home/vagrant/Code
